@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -15,39 +15,39 @@ void main()
 {
 	setlocale(LC_ALL, "Rus");
 
-#if defined TEMPERATURE   //начало блока
+#if defined TEMPERATURE   //РЅР°С‡Р°Р»Рѕ Р±Р»РѕРєР°
 	int temperature;
-	cout << "Введите температуру воздуха:"; cin >> temperature;
+	cout << "Р’РІРµРґРёС‚Рµ С‚РµРјРїРµСЂР°С‚СѓСЂСѓ РІРѕР·РґСѓС…Р°:"; cin >> temperature;
 	if (temperature > 0)
 	{
-		cout << "На улице тепло " << endl;
+		cout << "РќР° СѓР»РёС†Рµ С‚РµРїР»Рѕ " << endl;
 	}
 	else
 	{
-		cout << " На улице холодно" << endl;
+		cout << " РќР° СѓР»РёС†Рµ С…РѕР»РѕРґРЅРѕ" << endl;
 	}
-#endif // TEMPERATURE  конец блока
+#endif // TEMPERATURE  РєРѕРЅРµС† Р±Р»РѕРєР°
 
 
-#ifdef TARGET // начало блока
+#ifdef TARGET // РЅР°С‡Р°Р»Рѕ Р±Р»РѕРєР°
 	int n;
-	cout << "Введите число"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ"; cin >> n;
 	if (n > 0 && n < 10)
 	{
-		cout << "Цель поражена" << endl;
+		cout << "Р¦РµР»СЊ РїРѕСЂР°Р¶РµРЅР°" << endl;
 	}
 	else
 	{
-		cout << "Вы промахнулись" << endl;
+		cout << "Р’С‹ РїСЂРѕРјР°С…РЅСѓР»РёСЃСЊ" << endl;
 	}
-#endif // TARGET  // конец блока
+#endif // TARGET  // РєРѕРЅРµС† Р±Р»РѕРєР°
 
 
-  // Если определенно CALC_1,то нижеследующий код. до дерективы #endif. будет виден компилятору
-#ifdef CALC_1// начало блока
-	double a, b;//ЧИСЛА  С КЛАВИАТУРЫ
-	char s; //ЗНАК ОПРЕЦИИ 
-	cout << "Введите простое выражение :";
+  // Р•СЃР»Рё РѕРїСЂРµРґРµР»РµРЅРЅРѕ CALC_1,С‚Рѕ РЅРёР¶РµСЃР»РµРґСѓСЋС‰РёР№ РєРѕРґ. РґРѕ РґРµСЂРµРєС‚РёРІС‹ #endif. Р±СѓРґРµС‚ РІРёРґРµРЅ РєРѕРјРїРёР»СЏС‚РѕСЂСѓ
+#ifdef CALC_1// РЅР°С‡Р°Р»Рѕ Р±Р»РѕРєР°
+	double a, b;//Р§РРЎР›Рђ  РЎ РљР›РђР’РРђРўРЈР Р«
+	char s; //Р—РќРђРљ РћРџР Р•Р¦РР 
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРѕСЃС‚РѕРµ РІС‹СЂР°Р¶РµРЅРёРµ :";
 	cin >> a >> s >> b; 
 	cout << a << s << b << endl;
 	if (s == '+')
@@ -70,7 +70,7 @@ void main()
 	{
 		cout << " Error : No operation !" << endl;
 	}
-#endif // CALC_1   конец блока
+#endif // CALC_1   РєРѕРЅРµС† Р±Р»РѕРєР°
 
 
 #ifdef SWITHC_SYNTAX
@@ -101,14 +101,14 @@ void main()
 
 	
 #ifdef FRACT_NUMB
-	double money;//обьявляем дробную переменную 
-	cout << "введите сумму перевода :"; cin >> money;
+	double money;//РѕР±СЊСЏРІР»СЏРµРј РґСЂРѕР±РЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ 
+	cout << "РІРІРµРґРёС‚Рµ СЃСѓРјРјСѓ РїРµСЂРµРІРѕРґР° :"; cin >> money;
 	cout << money << endl;
 	money += 1e-10;
-	int grn = money;//неявное преобразование типов из double в int
-	cout << grn << "грн.\n";
+	int grn = money;//РЅРµСЏРІРЅРѕРµ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ С‚РёРїРѕРІ РёР· double РІ int
+	cout << grn << "РіСЂРЅ.\n";
 	int cop = (money - grn) * 100;
-	cout << cop << "коп.\n";
+	cout << cop << "РєРѕРї.\n";
 
 #endif // FRACT_NUMB
 

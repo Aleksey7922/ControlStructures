@@ -29,7 +29,7 @@ void main()
 		{
 			if (i == 0 && j == 0)cout << UPPER_LEFT_ANGLE;
 			else if (i == 0 && j == n)cout << UPPER_RIGHT_ANGLE;
-			else if (i == 0 && j == 0)cout << LOWER_LEFT_ANGLE;
+			else if (i == n && j == 0)cout << LOWER_LEFT_ANGLE;
 			else if (i == n && j == n)cout << LOWER_RIGHT_ANGLE;
 			else if (i == 0 || i == n)cout << HORIZONTAL_LINE << HORIZONTAL_LINE;
 			else if (j == 0 || j == n)cout << VERTICALE_LINE;
